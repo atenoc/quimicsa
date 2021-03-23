@@ -1,40 +1,53 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark  fixed-top">
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 
   <div class="container">
 
-    <a class="navbar-brand" routerLink="home">
-      <img src="assets/images/Quimicsa.png" alt="" height="50px">
-    </a>
+  <a class="navbar-brand" routerLink="home">
+    <img src="https://res.cloudinary.com/dnblt4j16/image/upload/v1615862043/quimicsa/Quimicsa_qjwisw.png" alt="" height="50px">
+  </a>
 
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" routerLink="home">Inicio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="nosotros">Nosotros</a>
-    </li>
-    <li class="nav-item dropdown"  >
-			<a class="nav-link " data-toggle="dropdown" routerLink="valores">Valores</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Misión</a></li>
-          <li><a href="#">Visión</a></li>
-        </ul>
-		</li>
-    
-    <li class="nav-item dropdown"  >
-			<a class="nav-link " data-toggle="dropdown" routerLink="servicios">Servicios</a>
-        <ul class="dropdown-menu" >
-          <li><a href="#">Hogar</a></li>
-          <li><a href="#">Lavandería</a></li>
-          <li><a href="#">Automotriz</a></li>
-          <li><a href="#">Corporal</a></li>
-          <li><a href="#">Agua</a></li>
-        </ul>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" routerLink="contacto">Contacto</a>
-		</li>
-  </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="link-3" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="link-3" routerLink="nosotros">Nosotros</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="link-3 dropdown-toggle" routerLink="valores" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Valores
+        </a>
+        <div class="dropdown-menu estilo-drop" aria-labelledby="navbarDropdown" >
+          <a class="dropdown-item" href="#">Misión</a>
+          <a class="dropdown-item" href="#">Otro</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Visión</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="link-3 dropdown-toggle" routerLink="servicios" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Productos
+        </a>
+        <div class="dropdown-menu estilo-drop" aria-labelledby="navbarDropdown" >
+          <a class="dropdown-item" href="#">Agua</a>
+          <a class="dropdown-item" href="#">Hogar</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Lavandería</a>
+          <a class="dropdown-item" href="#">Automotríz</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="link-3" routerLink="contacto">Contacto</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </div>
 
 </div>
 
